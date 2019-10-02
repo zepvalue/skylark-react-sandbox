@@ -20,3 +20,28 @@
 .App-link {
   color: #09d3ac;
 }
+
+.card {
+  box-shadow: 5px 10px #888888;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+#header-description {
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  font-family: "proxima-nova", arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+#form_container {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+  padding:5px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

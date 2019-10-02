@@ -1,27 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 
 import destinationData from 'data/destination-cancun.json';
 
 import Test from 'components/Test';
-import logo from './logo.svg';
+import SearchForm from 'components/SearchForm';
 
-function App() {
+const App = () => {
+  const [responseData, setResponseData] = useState('');
+  const { hotels } = destinationData;
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
         <Test text={destinationData.description} />
-        <p>{destinationData.hotels.length} hotels</p>
+        <div className="header_container">
+          <h1>Booking is just the beginning</h1>
+          <h3 className="header_description">Skylark combines real time technology with human expertise.</h3>
+        </div>
+        <SearchForm list={hotels} setResponseData={setResponseData} />
+        <div>{responseData}</div>
       </header>
     </div>
   );
-}
+};
 
 export default App;
