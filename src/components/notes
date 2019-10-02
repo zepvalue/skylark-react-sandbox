@@ -1,0 +1,12 @@
+error handling on the no availability message or notification 
+
+input sanitization 
+
+tests:
+  enzyme
+  puppeter
+
+  display the results in a div 
+
+
+
