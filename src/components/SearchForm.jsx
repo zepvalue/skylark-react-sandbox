@@ -10,8 +10,7 @@ const SearchForm = ({ list, setResponseData }) => {
   const [date, setDate] = useState('');
   const [passengers, setPassengers] = useState(1);
   const [rooms, setRooms] = useState(1);
-
-  console.log('....SEARCH...', date)
+  
   const options = list.map((el, i) => (
     <option key={`key${i}`} value={el.code}>
       {el.name}
