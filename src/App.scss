@@ -7,7 +7,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url('./assets/spadeckchairs.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,9 +41,30 @@
   border: 1px solid rgba(255, 255, 255, 0.35);
   background: rgba(255, 255, 255, 0.25);
   border-radius: 3px;
-  padding:5px;
+  padding:2px;
   width: 90%;
   display: flex;
+  margin:0 -15px;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+#search-button {
+  text-transform: none;
+  color: #fff;
+  text-align: center;
+  background: #e66756;
+}
+
+.DateRangePickerInput_arrow {
+  width: 40px;
+  text-align: center;
+}
+
+.DateInput {
+  display: inline-flex !important;
+}
+
+.DateInput_input {
+  cursor: pointer;
 }
