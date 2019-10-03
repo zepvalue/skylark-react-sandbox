@@ -6,7 +6,7 @@ import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 
 const SearchForm = ({ list, setResponseData }) => {
-  const [hotelCode, setHotel] = useState('');
+  const [hotelCode, setHotel] = useState('0000');
   const [date, setDate] = useState('');
   const [passengers, setPassengers] = useState(1);
   const [rooms, setRooms] = useState(1);
