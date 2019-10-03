@@ -35,4 +35,15 @@ describe('React Unit Tests', () => {
     expect(wrapper.find(DateRangeSelector).length).toEqual(1);
     expect(wrapper.find(<select />).length).toEqual(0);
   });
+
+  test("default empty rooms if no data to map through", () => {
+    const props = {
+      list: [{ name: 'room1' }, { name: 'room2' }, { name: 'room3' }],
+      setResponseData() {
+        return 'data';
+      },
+    };
+    const wrapper = shallow(<SearchForm {...props} />);
+    expect(component.toJSON()).toMatchSnapshot();
+  })
 });

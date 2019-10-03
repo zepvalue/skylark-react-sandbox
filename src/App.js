@@ -5,7 +5,7 @@ import destinationData from 'data/destination-cancun.json';
 import SearchForm from 'components/SearchForm';
 
 const App = () => {
-  const [responseData, setResponseData] = useState(null);
+  const [responseData, setResponseData] = useState([]);
   const { hotels } = destinationData;
   return (
     <div className="App">

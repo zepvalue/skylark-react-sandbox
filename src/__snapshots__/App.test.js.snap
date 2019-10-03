@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`React Unit Tests Button Snapshot 1`] = `<button />`;
+
+exports[`React Unit Tests default empty rooms if no data to map through 1`] = `ShallowWrapper {}`;
